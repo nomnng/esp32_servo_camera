@@ -1,1 +1,3 @@
 # esp32_servo_camera
+
+Small project that was created as a result of trying to build a vehicle that will move using two servo motors and controlled by ESP32. ESP32 will connect to the tcp server and receive commands, and also it will send an image from a camera(OV2640 in my case) to the server. For displaying images from the camera and also controlling servos by pressing corresponding buttons simple html page was made, it will connect to the server using websocket protocol. Additionaly ESP32 will create it's own debug tcp server which can be used to upload OTA updates, or get image from the camera.
